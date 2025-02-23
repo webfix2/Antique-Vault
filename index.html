@@ -8,24 +8,20 @@
     <style>
         body {
             font-family: 'Georgia', serif;
-            background-color: #f4f1e8;
+            background-color: #e8dfd0;
             color: #5a4636;
         }
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            background: #fff;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 20px;
+        .container-fluid {
+            padding: 30px;
         }
         .header {
             display: flex;
             align-items: center;
-            padding: 10px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.1);
         }
         .logo {
-            height: 50px;
+            height: 60px;
             margin-right: 15px;
         }
         .btn-custom {
@@ -38,41 +34,55 @@
         .btn-custom:hover {
             background-color: #6d482f;
         }
+        .featured-antiques img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <div class="header">
             <img src="logo.png" alt="The Antique Vault Logo" class="logo">
             <h1>The Antique Vault</h1>
         </div>
-        <p>Where history meets elegance, and timeless treasures are just a step away from becoming part of your collection.</p>
-        <p>We specialize in high-quality antique and vintage items, offering rare furniture pieces, classic décor, and exquisite collectibles.</p>
-        <p>Enjoy flexible payment options, including our "Pay Later" plan, to bring home your dream antiques with ease.</p>
+        <p class="text-center">Where history meets elegance, and timeless treasures are just a step away from becoming part of your collection.</p>
+        <p class="text-center">We specialize in high-quality antique and vintage items, offering rare furniture pieces, classic décor, and exquisite collectibles.</p>
+        <p class="text-center">Enjoy flexible payment options, including our "Pay Later" plan, to bring home your dream antiques with ease.</p>
         
-        <h2 class="mt-4">Featured Antiques</h2>
-        <div class="row">
+        <h2 class="text-center mt-4">Featured Antiques</h2>
+        <div class="row featured-antiques">
             <div class="col-md-4">
-                <img src="antique1.jpg" class="img-fluid rounded" alt="Antique Sample 1">
-                <p>Elegant Victorian Chair</p>
+                <img src="antique1.jpg" alt="Antique Sample 1">
+                <p class="text-center">Elegant Victorian Chair</p>
             </div>
             <div class="col-md-4">
-                <img src="antique2.jpg" class="img-fluid rounded" alt="Antique Sample 2">
-                <p>Classic Grandfather Clock</p>
+                <img src="antique2.jpg" alt="Antique Sample 2">
+                <p class="text-center">Classic Grandfather Clock</p>
             </div>
             <div class="col-md-4">
-                <img src="antique3.jpg" class="img-fluid rounded" alt="Antique Sample 3">
-                <p>Vintage Wooden Cabinet</p>
+                <img src="antique3.jpg" alt="Antique Sample 3">
+                <p class="text-center">Vintage Wooden Cabinet</p>
             </div>
         </div>
         
-        <h2 class="mt-4">Contact Us</h2>
-        <p>Email: contact@theantiquevault.com</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Visit Us: 123 Vintage Lane, Antique City</p>
-        <a href="mailto:contact@theantiquevault.com" class="btn btn-custom">Get in Touch</a>
+        <h2 class="text-center mt-4">Contact Us</h2>
+        <p class="text-center">Email: contact@theantiquevault.com</p>
+        <p class="text-center">Phone: (123) 456-7890</p>
+        <p class="text-center">Visit Us: 123 Vintage Lane, Antique City</p>
+        <div class="text-center">
+            <a href="mailto:contact@theantiquevault.com" class="btn btn-custom">Get in Touch</a>
+        </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
