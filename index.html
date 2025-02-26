@@ -70,7 +70,7 @@
             <img src="https://robertlugana.sirv.com/Antique%20Vault/JayLogo.jpg" alt="The Antique Vault Logo" class="logo">
             <h1>The Antique Vault</h1>
             <div class="dropdown">
-                <button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="languages-menu" type="button">
+                <button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-bs-toggle="dropdown" id="languages-menu" type="button">
                     <span class="flags"><i class="fa fa-globe"></i> <span data-lang="language">English</span></span>
                     <span class="caret"></span>
                 </button>
@@ -205,23 +205,30 @@
         let currentLanguage = "en";
 
         function changeLanguage(lang) {
+            console.log(`Changing language to: ${lang}`);
             currentLanguage = lang;
             updateContent();
         }
 
         function updateContent() {
+            console.log(`Updating content to language: ${currentLanguage}`);
             const elements = document.querySelectorAll("[data-lang]");
             elements.forEach(element => {
                 const key = element.getAttribute("data-lang");
                 if (translations[currentLanguage] && translations[currentLanguage][key]) {
+                    console.log(`Updating element with key: ${key}`);
                     element.innerHTML = translations[currentLanguage][key];
                 } else if (translations["en"][key]) {
+                    console.log(`Fallback to English for key: ${key}`);
                     element.innerHTML = translations["en"][key]; // Default to English if translation is missing
                 }
             });
         }
 
-        document.addEventListener("DOMContentLoaded", updateContent);
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Document loaded, updating content...");
+            updateContent();
+        });
     </script>
 </body>
 </html>
