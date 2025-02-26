@@ -69,69 +69,159 @@
         <header class="header">
             <img src="https://robertlugana.sirv.com/Antique%20Vault/JayLogo.jpg" alt="The Antique Vault Logo" class="logo">
             <h1>The Antique Vault</h1>
+            <div class="dropdown">
+                <button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="languages-menu" type="button">
+                    <span class="flags"><i class="fa fa-globe"></i> <span data-lang="language">English</span></span>
+                    <span class="caret"></span>
+                </button>
+                <ul aria-labelledby="languages-menu" class="dropdown-menu">
+                    <li><a href="#" onclick="changeLanguage('en')">🇺🇸 <span data-lang="english">English</span></a></li>
+                    <li><a href="#" onclick="changeLanguage('de')">🇩🇪 <span data-lang="german">Deutsch</span></a></li>
+                    <li><a href="#" onclick="changeLanguage('fr')">🇫🇷 <span data-lang="french">Français</span></a></li>
+                    <li><a href="#" onclick="changeLanguage('it')">🇮🇹 <span data-lang="italian">Italiano</span></a></li>
+                    <li><a href="#" onclick="changeLanguage('es')">🇪🇸 <span data-lang="spanish">Español</span></a></li>
+                    <li><a href="#" onclick="changeLanguage('pt')">🇵🇹 <span data-lang="portuguese">Português</span></a></li>
+                </ul>
+            </div>
         </header>
         
         <section class="section text-center">
-            <h2>About Us</h2>
-            <p>Where history meets elegance, and timeless treasures are just a step away from becoming part of your collection.</p>
-            <p>We specialize in high-quality antique and vintage items, offering rare furniture pieces, classic décor, and exquisite collectibles.</p>
-            <p>Enjoy flexible payment options, including our "Pay Later" plan, to bring home your dream antiques with ease.</p>
+            <h2 data-lang="aboutUsTitle">About Us</h2>
+            <p data-lang="aboutUsText1">Where history meets elegance, and timeless treasures are just a step away from becoming part of your collection.</p>
+            <p data-lang="aboutUsText2">We specialize in high-quality antique and vintage items, offering rare furniture pieces, classic décor, and exquisite collectibles.</p>
+            <p data-lang="aboutUsText3">Enjoy flexible payment options, including our "Pay Later" plan, to bring home your dream antiques with ease.</p>
         </section>
         
         <section class="section">
-            <h2 class="text-center">Featured Antiques</h2>
+            <h2 class="text-center" data-lang="featuredAntiquesTitle">Featured Antiques</h2>
             <div class="row featured-antiques">
                 <div class="col-md-4">
                     <img src="https://robertlugana.sirv.com/Antique%20Vault/Antiques/WhatsApp%20Image%202025-02-25%20at%2009.05.30_78c1c6d4.jpg" alt="Antique Sample 1">
-                    <p class="text-center">Elegant Victorian Chair</p>
+                    <p class="text-center" data-lang="antique1">Elegant Victorian Chair</p>
                 </div>
                 <div class="col-md-4">
                     <img src="https://robertlugana.sirv.com/Antique%20Vault/Antiques/IMG-20250225-WA0007.jpg" alt="Antique Sample 2">
-                    <p class="text-center">Classic Grandfather Clock</p>
+                    <p class="text-center" data-lang="antique2">Classic Grandfather Clock</p>
                 </div>
                 <div class="col-md-4">
                     <img src="https://robertlugana.sirv.com/Antique%20Vault/Antiques/IMG-20250225-WA0006.jpg" alt="Antique Sample 3">
-                    <p class="text-center">Vintage Wooden Cabinet</p>
+                    <p class="text-center" data-lang="antique3">Vintage Wooden Cabinet</p>
                 </div>
             </div>
             <div class="row featured-antiques">
                 <div class="col-md-4">
                     <img src="https://robertlugana.sirv.com/Antique%20Vault/Antiques/IMG-20250225-WA0005.jpg" alt="Antique Sample 1">
-                    <p class="text-center">Elegant Victorian Chair</p>
+                    <p class="text-center" data-lang="antique1">Elegant Victorian Chair</p>
                 </div>
                 <div class="col-md-4">
                     <img src="https://robertlugana.sirv.com/Antique%20Vault/Antiques/IMG-20250225-WA0004.jpg" alt="Antique Sample 2">
-                    <p class="text-center">Classic Grandfather Clock</p>
+                    <p class="text-center" data-lang="antique2">Classic Grandfather Clock</p>
                 </div>
                 <div class="col-md-4">
                     <img src="https://robertlugana.sirv.com/Antique%20Vault/Antiques/IMG-20250225-WA0003.jpg" alt="Antique Sample 3">
-                    <p class="text-center">Vintage Wooden Cabinet</p>
+                    <p class="text-center" data-lang="antique3">Vintage Wooden Cabinet</p>
                 </div>
             </div>
             <div class="row featured-antiques">
                 <div class="col-md-4">
                     <img src="https://robertlugana.sirv.com/Antique%20Vault/Antiques/IMG-20250225-WA0002.jpg" alt="Antique Sample 2">
-                    <p class="text-center">Classic Grandfather Clock</p>
+                    <p class="text-center" data-lang="antique2">Classic Grandfather Clock</p>
                 </div>
             </div>
         </section>
         
         <section class="section text-center">
-            <h2>Contact Us</h2>
-            <p><i class="fas fa-user contact-icons"></i><strong>CEO:</strong> Vincent Ethamma</p>
-            <p><i class="fas fa-map-marker-alt contact-icons"></i><strong>Address:</strong> 2301 W Passyunk Ave, Philadelphia, PA 19145</p>
-            <p><i class="fab fa-whatsapp contact-icons"></i><strong>WhatsApp:</strong> <a href="https://wa.me/18722027536" target="_blank">+1 (872) 202-7536</a></p>
-            <p><i class="fas fa-envelope contact-icons"></i><strong>Email:</strong> <a href="mailto:antique_vault247@protonmail.com">antique_vault247@protonmail.com</a></p>
-            <p><i class="fas fa-envelope contact-icons"></i><strong>Email:</strong> <a href="mailto:antique_vault247@outlook.com">antique_vault247@outlook.com</a></p>
-            <p><i class="fas fa-store contact-icons"></i><strong>Visit Us:</strong> 123 Vintage Lane, Antique City</p>
-            <a href="mailto:antique_vault247@protonmail.com" class="btn btn-custom">Get in Touch</a>
+            <h2 data-lang="contactUsTitle">Contact Us</h2>
+            <p><i class="fas fa-user contact-icons"></i><strong data-lang="ceo">CEO:</strong> Vincent Ethamma</p>
+            <p><i class="fas fa-map-marker-alt contact-icons"></i><strong data-lang="address">Address:</strong> 2301 W Passyunk Ave, Philadelphia, PA 19145</p>
+            <p><i class="fab fa-whatsapp contact-icons"></i><strong data-lang="whatsapp">WhatsApp:</strong> <a href="https://wa.me/18722027536" target="_blank">+1 (872) 202-7536</a></p>
+            <p><i class="fas fa-envelope contact-icons"></i><strong data-lang="email">Email:</strong> <a href="mailto:antique_vault247@protonmail.com">antique_vault247@protonmail.com</a></p>
+            <p><i class="fas fa-envelope contact-icons"></i><strong data-lang="email">Email:</strong> <a href="mailto:antique_vault247@outlook.com">antique_vault247@outlook.com</a></p>
+            <p><i class="fas fa-store contact-icons"></i><strong data-lang="visitUs">Visit Us:</strong> 123 Vintage Lane, Antique City</p>
+            <a href="mailto:antique_vault247@protonmail.com" class="btn btn-custom" data-lang="getInTouch">Get in Touch</a>
         </section>
         
         <footer class="footer">
-            <p>&copy; 1925-2025 The Antique Vault. All rights reserved.</p>
+            <p data-lang="footerText">&copy; 1925-2025 The Antique Vault. All rights reserved.</p>
         </footer>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const translations = {
+            "en": {
+                "language": "English",
+                "english": "English",
+                "german": "German",
+                "french": "French",
+                "italian": "Italian",
+                "spanish": "Spanish",
+                "portuguese": "Portuguese",
+                "aboutUsTitle": "About Us",
+                "aboutUsText1": "Where history meets elegance, and timeless treasures are just a step away from becoming part of your collection.",
+                "aboutUsText2": "We specialize in high-quality antique and vintage items, offering rare furniture pieces, classic décor, and exquisite collectibles.",
+                "aboutUsText3": "Enjoy flexible payment options, including our 'Pay Later' plan, to bring home your dream antiques with ease.",
+                "featuredAntiquesTitle": "Featured Antiques",
+                "antique1": "Elegant Victorian Chair",
+                "antique2": "Classic Grandfather Clock",
+                "antique3": "Vintage Wooden Cabinet",
+                "contactUsTitle": "Contact Us",
+                "ceo": "CEO:",
+                "address": "Address:",
+                "whatsapp": "WhatsApp:",
+                "email": "Email:",
+                "visitUs": "Visit Us:",
+                "getInTouch": "Get in Touch",
+                "footerText": "&copy; 1925-2025 The Antique Vault. All rights reserved."
+            },
+            "de": {
+                "language": "Deutsch",
+                "english": "Englisch",
+                "german": "Deutsch",
+                "french": "Französisch",
+                "italian": "Italienisch",
+                "spanish": "Spanisch",
+                "portuguese": "Portugiesisch",
+                "aboutUsTitle": "Über uns",
+                "aboutUsText1": "Wo Geschichte auf Eleganz trifft und zeitlose Schätze nur einen Schritt davon entfernt sind, Teil Ihrer Sammlung zu werden.",
+                "aboutUsText2": "Wir sind auf hochwertige antike und Vintage-Artikel spezialisiert und bieten seltene Möbelstücke, klassische Dekorationen und exquisite Sammlerstücke an.",
+                "aboutUsText3": "Genießen Sie flexible Zahlungsmöglichkeiten, einschließlich unseres 'Später bezahlen'-Plans, um Ihre Traumantiquitäten ganz einfach nach Hause zu bringen.",
+                "featuredAntiquesTitle": "Ausgewählte Antiquitäten",
+                "antique1": "Eleganter viktorianischer Stuhl",
+                "antique2": "Klassische Standuhr",
+                "antique3": "Vintage-Holzschrank",
+                "contactUsTitle": "Kontaktieren Sie uns",
+                "ceo": "CEO:",
+                "address": "Adresse:",
+                "whatsapp": "WhatsApp:",
+                "email": "E-Mail:",
+                "visitUs": "Besuchen Sie uns:",
+                "getInTouch": "Kontakt aufnehmen",
+                "footerText": "&copy; 1925-2025 The Antique Vault. Alle Rechte vorbehalten."
+            },
+            // Add more languages as needed
+        };
+
+        let currentLanguage = "en";
+
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            updateContent();
+        }
+
+        function updateContent() {
+            const elements = document.querySelectorAll("[data-lang]");
+            elements.forEach(element => {
+                const key = element.getAttribute("data-lang");
+                if (translations[currentLanguage] && translations[currentLanguage][key]) {
+                    element.innerHTML = translations[currentLanguage][key];
+                } else if (translations["en"][key]) {
+                    element.innerHTML = translations["en"][key]; // Default to English if translation is missing
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", updateContent);
+    </script>
 </body>
 </html>
